@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11', 'org.seleniumhq.selenium:selenium-java:3.4.0'
+    testCompile group: 'com.assertthat', name: 'selenium-shutterbug', version: '0.6.1'
+
+}
