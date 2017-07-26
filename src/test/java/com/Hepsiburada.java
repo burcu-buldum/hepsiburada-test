@@ -39,9 +39,15 @@ public class Hepsiburada {
 
         driver.findElement(By.id("buttonProductSearch")).click();
 
-        driver.findElement(By.cssSelector(".product-image")).click();
-
         driver.findElements(By.id("productSearch")).clear();
+
+        driver.findElement(By.id("productSearch")).sendKeys("İphone 6");
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("productSearch")));
+
+        driver.findElement(By.id(("buttonProductSearch"))).click();
+
+
 
         driver.quit();
     }
