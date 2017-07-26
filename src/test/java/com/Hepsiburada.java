@@ -39,6 +39,10 @@ public class Hepsiburada {
 
         driver.findElement(By.id("buttonProductSearch")).click();
 
+        driver.findElement(By.cssSelector(".product-image")).click();
+
+        driver.findElements(By.id("productSearch")).clear();
+
         driver.quit();
     }
 }
