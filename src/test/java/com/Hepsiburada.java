@@ -41,7 +41,7 @@ public class Hepsiburada {
 
         driver.findElement(By.id("productSearch")).clear();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("productSearch")));
+        
 
         driver.findElement(By.id("productSearch")).sendKeys("İphone 6");
 
